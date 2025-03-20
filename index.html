@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Collective | $SEE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    <div id="cursor-follower"></div>
+    <div class="shadow-container"></div>
+    
+    <!-- Social Media Icons with Editable Links -->
+    <div class="social-icons">
+        <!-- Updated X (formerly Twitter) icon -->
+        <a href="https://x.com/your-profile" class="social-icon" target="_blank"><i class="fab fa-twitter x-icon"></i></a>
+        <a href="https://t.me/your-channel" class="social-icon" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://discord.gg/your-server" class="social-icon" target="_blank"><i class="fab fa-discord"></i></a>
+    </div>
+    
+    <div class="menu" id="sideMenu">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <div class="logo">
+            <img src="images/logo.png" alt="Shadow Collective Logo" class="logo-img">
+        </div>
+        <div class="menu-items">
+            <a href="#" class="menu-item active" data-section="home" onclick="showSection(this)">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="menu-item" data-section="mission" onclick="showSection(this)">
+                <i class="fas fa-flag"></i>
+                <span>Mission</span>
+            </a>
+            <a href="#" class="menu-item" data-section="why-join" onclick="showSection(this)">
+                <i class="fas fa-users"></i>
+                <span>Why Join Us</span>
+            </a>
+            <a href="#" class="menu-item" data-section="tokenomics" onclick="showSection(this)">
+                <i class="fas fa-coins"></i>
+                <span>Tokenomics</span>
+            </a>
+            <a href="#" class="menu-item" data-section="buy-token" onclick="showSection(this)">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Buy Token</span>
+            </a>
+        </div>
+    </div>
+    
+    <span class="menu-btn" onclick="toggleMenu()">&#9776;</span>
+    
+    <main class="main-content" id="mainContent">
+        <section id="home" class="section active">
+            <div class="header-container">
+                <h1 class="section-header shadow-text float">SHADOW COLLECTIVE</h1>
+                <div class="token-name">$SEE</div>
+                <p class="tagline">We are The Unseen. No whales. No masters. Join us and <span class="highlight">$SEE</span> with us.</p>
+            </div>
+            <div class="content-container">
+                <h2>THE FIRST IDEACOIN</h2>
+                <p>Welcome to Shadow Collective, the first true ideacoin uniting retail investors against institutional capture. We move in the shadows, but our impact is felt everywhere.</p>
+                <p>In a market dominated by memes and manipulation, we stand for something different. We stand for you—the overlooked, the undervalued, the retail investor pushed aside by Wall Street giants.</p>
+                <p>Unlike memecoins that rely on fleeting hype and meaningless imagery, we represent a movement—a collective ideology that unites those who believe in reclaiming financial power.</p>
+                <p>$SEE isn't just a token. It's a declaration. A movement. A collective of shadows that, when united, can eclipse even the brightest stars of the financial world.</p>
+            </div>
+            <div class="section-image">
+                <img src="images/home-image.jpg" alt="Shadow Collective Concept">
+            </div>
+        </section>
+        
+        <section id="mission" class="section">
+            <div class="header-container">
+                <h1 class="section-header shadow-text">OUR MISSION</h1>
+            </div>
+            <div class="content-container">
+                <h2>AGAINST INSTITUTIONAL CAPTURE</h2>
+                <p>The first Ideacoin uniting retail investors against institutional capture. We're not a meme - we're a movement.</p>
+                <p>Shadow Collective exists to rebalance the scales of financial power. For too long, institutional investors have manipulated markets, leaving retail investors to pick up scraps. We're changing that narrative.</p>
+                <p>Our mission is threefold:</p>
+                <p>1. <strong>Unite</strong> retail investors under a common cause</p>
+                <p>2. <strong>Educate</strong> our community on market manipulation tactics</p>
+                <p>3. <strong>Empower</strong> individuals to take collective action against institutional dominance</p>
+                <p>Through the power of blockchain technology and decentralized finance, we're creating a financial ecosystem where your voice matters, where transparency reigns, and where the playing field is finally level.</p>
+            </div>
+            <div class="section-image">
+                <img src="images/mission-image.jpg" alt="Shadow Collective Mission">
+            </div>
+        </section>
+        
+        <section id="why-join" class="section">
+            <div class="header-container">
+                <h1 class="section-header shadow-text">WHY JOIN US</h1>
+            </div>
+            <div class="content-container">
+                <h2>THE UNSEEN</h2>
+                <p>The Unseen is your shadow, my shadow, and the collective power of millions ignored by Wall Street. We're here to prove ideas outlive hype.</p>
+                <p>In the darkest corners of the financial world, where institutional giants cast long shadows, a collective consciousness began to form. Whispers of retail investors, tired of being treated as insignificant, coalesced into a powerful entity—The Unseen.</p>
+                <p>When you join Shadow Collective, you're not just buying a token—you're becoming part of a movement that's reshaping the future of finance.</p>
+                <p>As a member of The Unseen, you gain:</p>
+                <p>• <strong>Community Power</strong>: Strength in numbers against market manipulators</p>
+                <p>• <strong>Financial Education</strong>: Learn strategies previously reserved for institutional investors</p>
+                <p>• <strong>True Decentralization</strong>: A token designed to resist whale accumulation</p>
+                <p>• <strong>Voice & Governance</strong>: Direct input on project direction and investments</p>
+                <p>Together, we cast a shadow larger than any institution. Together, we $SEE what others cannot.</p>
+            </div>
+            <div class="section-image">
+                <img src="images/join-image.jpg" alt="Join Shadow Collective">
+            </div>
+        </section>
+        
+        <section id="tokenomics" class="section">
+            <div class="header-container">
+                <h1 class="section-header shadow-text">TOKENOMICS</h1>
+            </div>
+            <div class="content-container">
+                <h2>$SEE THE VALUE</h2>
+                <p>$SEE is designed with anti-whale mechanics and sustainable growth at its core. Our tokenomics are designed with one principle in mind: fair distribution and sustainable growth.</p>
+                <p>Unlike traditional projects dominated by pre-sales and VC allocations, Shadow Collective ensures power remains with the community.</p>
+                
+                <div class="token-grid">
+                    <div class="token-card">
+                        <h3>Distribution</h3>
+                        <p>40% Community Allocation</p>
+                        <p>30% Liquidity Pool</p>
+                        <p>20% Development Fund</p>
+                        <p>10% Marketing & Partnerships</p>
+                    </div>
+                    
+                    <div class="token-card">
+                        <h3>Anti-Whale Mechanics</h3>
+                        <p>Maximum wallet: 1% of supply</p>
+                        <p>Transaction limit: 0.5% of supply</p>
+                        <p>Decreasing buy/sell tax for long-term holders</p>
+                    </div>
+                    
+                    <div class="token-card">
+                        <h3>Community Treasury</h3>
+                        <p>2% of all transactions fund community-governed initiatives</p>
+                        <p>Treasury investments decided by token holders</p>
+                        <p>Focus on long-term value creation</p>
+                    </div>
+                    
+                    <div class="token-card">
+                        <h3>Supply Details</h3>
+                        <p>Total Supply: 1,000,000,000 $SEE</p>
+                        <p>Burned at launch: 10%</p>
+                        <p>Deflationary mechanism through strategic buybacks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-image">
+                <img src="images/tokenomics-image.jpg" alt="$SEE Tokenomics">
+            </div>
+        </section>
+        
+        <section id="buy-token" class="section">
+            <div class="header-container">
+                <h1 class="section-header shadow-text">BUY $SEE TOKEN</h1>
+            </div>
+            <div class="content-container">
+                <h2>JOIN THE COLLECTIVE</h2>
+                <p>Ready to become one of The Unseen? Join Shadow Collective today and be part of the movement that's reshaping financial freedom.</p>
+                
+                <div class="token-card" style="max-width: 500px; margin: 30px auto;">
+                    <h3>Contract Address</h3>
+                    <p class="contract-address">Coming Soon</p>
+                    <div class="buy-button-container">
+                        <a href="#" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-image">
+                <img src="images/buy-image.jpg" alt="Buy Shadow Collective Token">
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Shadow Collective | $SEE | We are The Unseen
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
